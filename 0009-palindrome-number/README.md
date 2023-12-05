@@ -29,5 +29,35 @@
 	<li><code>-2<sup>31</sup>&nbsp;&lt;= x &lt;= 2<sup>31</sup>&nbsp;- 1</code></li>
 </ul>
 
-<p>&nbsp;</p>
-<strong>Follow up:</strong> Could you solve it without converting the integer to a string?</div>
+내 풀이
+```js
+/**
+ * @param {number} x
+ * @return {boolean}
+ */
+let isPalindrome = function(x) {
+    const arr = x.toString().split('');
+
+    while(arr.length > 1){
+        if(arr.shift() !== arr.pop()) return false;
+    }
+    return true;
+};
+```
+
+다른 사람 풀이
+```js
+/**
+ * @param {number} x
+ * @return {boolean}
+ */
+var isPalindrome = function(x) {
+  const y = x.toString().split("").reverse().join("");
+    if (y == x){
+        return true
+    }{
+        return false
+    }
+};
+```
+- 배열 메소드 더 공부해보기
