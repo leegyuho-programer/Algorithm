@@ -95,11 +95,13 @@ function removeDuplicates(nums) {
 ```js
 var removeDuplicates = function(nums) {
     let set = [...new Set(nums)];
-    console.log(set); // [ 1, 2 ]
-    nums = [];
+    nums.length = 0;
     nums.push(...set);
-    console.log(nums);
-    return nums;
+    return nums.length;
 };
 ```
-set을 이용해서 풀어보려고 했는데 도저히 생각이 안납니다.. 
+set을 이용해서 풀어보았는데 처음에는 nums = []; 이렇게 빈 배열로 초기화 했을 때는 안되었는데 nums.length = 0; 이렇게 초기화 하니 됐습니다.<br>
+<br>
+nums = [];를 사용하면 nums는 새로운 배열을 참조하게 되므로 원본 배열에는 영향을 주지 않습니다. <br>
+반면에 nums.length = 0;을 사용하면 nums는 여전히 원본 배열을 참조하므로 원본 배열도 변경됩니다. <br>
+이러한 차이 때문에 nums = [];를 사용했을 때 원하는 결과를 얻지 못했습니다.
