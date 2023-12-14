@@ -29,3 +29,40 @@
 	<li><code>1 &lt;= n &lt;= 45</code></li>
 </ul>
 </div>
+
+
+<h1>😎나의 풀이</h1>
+
+```js
+var climbStairs = function(n) {
+    if(n === 1) return 1
+    if(n === 2) return 2
+
+    return climbStairs(n-2) + climbStairs(n-1);
+};
+```
+이렇게 처음 풀었는데 시간 초과가 뜨며 실패를 했다...
+
+<h1>✍️다른 사람 풀이</h1>
+
+```js
+/**
+ * @param {number} n
+ * @return {number}
+ */
+var climbStairs = function(n) {
+    if(n < 2) return 1;
+
+    let num1 = 1;
+    let num2 = 1;
+    let num3;
+    
+    for(let i = 2; i <= n; i++) {
+        num3 = num1 + num2;
+        num1 = num2;
+        num2 = num3;
+    }
+    return num3;
+};
+```
+이렇게 변수를 만들어주고 거기에 반복해서 대입하면서 푸는 방식에 대해 새롭게 알게 되었다.
