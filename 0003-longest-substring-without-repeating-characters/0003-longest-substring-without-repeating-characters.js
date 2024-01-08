@@ -9,14 +9,14 @@ var lengthOfLongestSubstring = function(s) {
         answer = []; // Initialize the array for each i
         answer.push(s[i]);
         for(let j = i+1; j < s.length; j++) {
-            if(!answer.includes(s[j])) { // Check if the character is not in the array
+            if(!answer.includes(s[j])) {
                 answer.push(s[j]);
             }else {
-                break; // If a duplicate character is found, break the loop
+                break;
             }
         }
         if(maxArr < answer.length) {
-            maxArr = answer.length; // Update the maximum length
+            maxArr = answer.length;
         }
     }
     return maxArr;
