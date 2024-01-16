@@ -36,3 +36,26 @@ Note that (0, 3) is not counted since nums[0] + nums[3] is not strictly less tha
 	<li><code>-50 &lt;= nums[i], target &lt;= 50</code></li>
 </ul>
 </div>
+
+<h1>😎나의 풀이</h1>
+
+```js
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number}
+ */
+var countPairs = function(nums, target) {
+    let result = 0;
+    for(let i = 0; i < nums.length; i++) {
+        for(let j = i + 1; j < nums.length; j++) {
+            if(nums[i] + nums[j] < target) {
+                result++;
+            }
+        }
+    }
+    return result;
+};
+```
+result라는 변수를 하나 만들고 반복문을 계속 돌면서 동일한 계산은 반복되지 않도록 반복문 두개를 돌려서 두 수의 합이 target보다 작으면 result에 1씩 추가하는 방법을 사용했습니다.
+
