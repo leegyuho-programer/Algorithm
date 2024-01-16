@@ -4,13 +4,25 @@
  * @return {number}
  */
 var countPairs = function(nums, target) {
-    let result = 0;
-    for(let i = 0; i < nums.length; i++) {
-        for(let j = i + 1; j < nums.length; j++) {
-            if(nums[i] + nums[j] < target) {
-                result++;
+    nums.sort((a, b) => a - b); // 배열을 오름차순으로 정렬
+
+    let count = 0;
+    const n = nums.length;
+
+    for (let i = 0; i < n - 1; i++) {
+        let left = i + 1;
+        let right = n - 1;
+
+        while (left <= right) {
+            const mid = Math.floor((left + right) / 2);
+            if (nums[i] + nums[mid] < target) {
+                count += mid - left + 1;
+                left = mid + 1;
+            } else {
+                right = mid - 1;
             }
         }
     }
-    return result;
+
+    return count;
 };
