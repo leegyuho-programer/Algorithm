@@ -1,4 +1,4 @@
 function solution(s) {
-  const result = s.split(' ')
-  return Math.min(...result) + ' ' + Math.max(...result);
+  let result = s.split(' ').sort((a, b) => a - b);
+  return result[0] + ' ' + result[result.length-1];
 }
