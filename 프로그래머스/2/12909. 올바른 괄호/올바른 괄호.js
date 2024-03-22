@@ -1,14 +1,13 @@
 function solution(s){
-    let left = 0;
-    let right = 0;
+    let result = 0;
     
     for(let i = 0; i < s.length; i++) {
         if(s[i] === '(') {
-            left++;
+            result++;
         } else {
-            right++;
+            result--;
         }
-        if(right > left) return false;
+        if(result < 0) return false;
     }
-    return s[0] === '(' && s[s.length - 1] === ')' && left === right ? true : false;
+    return result !== 0 ? false : true;
 }
