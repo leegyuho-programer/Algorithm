@@ -66,3 +66,62 @@
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
+
+
+<h1>😎나의 풀이</h1>
+
+### 첫번째 풀이 실패 (20, 21, 22, 23번 테스트에서 실패(시간 초과)가 떴다)
+```js
+function solution(numbers) {
+    let answer = []
+    
+    for(let i = 0; i < numbers.length; i++) {
+        let found = false;
+        for(let j = i + 1; j < numbers.length; j++) {
+            if(numbers[i] < numbers[j]) {
+                answer.push(numbers[j]);
+                found = true;
+                break;
+            }
+        }
+        if(!found) answer.push(-1)
+    }
+    return answer;
+}
+```
+
+### 두번째 풀이 실패 (20, 21, 22, 23번 테스트에서 실패(시간 초과)가 떴다)
+```js
+function solution(numbers) {
+    let answer = []
+    
+    for(let i = 0; i < numbers.length; i++) {
+        let num = -1;
+        for(let j = i + 1; j < numbers.length; j++) {
+            if(numbers[i] < numbers[j]) {
+                num = numbers[j]
+                break;
+            }
+        }
+        answer.push(num);
+    }
+    return answer;
+}
+```
+
+### 세번째 풀이 실패 (20, 21, 22, 23번 테스트에서 실패(시간 초과)가 떴다)
+```js
+function solution(numbers) {
+    const answer = Array(numbers.length).fill(-1);
+    
+    for(let i = 0; i < numbers.length - 1; i++) {
+        for(let j = i + 1; j < numbers.length; j++) {
+            if(numbers[i] < numbers[j]) {
+                answer[i] = numbers[j];
+                break;
+            }
+        }
+    }
+    return answer
+}
+```
