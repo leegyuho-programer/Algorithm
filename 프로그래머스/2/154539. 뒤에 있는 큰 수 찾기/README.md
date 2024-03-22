@@ -112,7 +112,7 @@ function solution(numbers) {
 ### 세번째 풀이 실패 (20, 21, 22, 23번 테스트에서 실패(시간 초과)가 떴다)
 ```js
 function solution(numbers) {
-    const answer = Array(numbers.length).fill(-1);
+    let answer = Array(numbers.length).fill(-1);
     
     for(let i = 0; i < numbers.length - 1; i++) {
         for(let j = i + 1; j < numbers.length; j++) {
