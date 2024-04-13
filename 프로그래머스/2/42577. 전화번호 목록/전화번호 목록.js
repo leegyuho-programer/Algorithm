@@ -1,14 +1,3 @@
-// function solution(phone_book) {
-//     let map = new Map();
-//     phone_book.sort((a, b) => a - b);
-    
-//     for(let i = 1; i < phone_book.length; i++) {
-//         if(phone_book[i].startsWith(phone_book[0])) {
-//             return false;
-//         }
-//     }
-//     return true;
-// }
 function solution(phone_book) {
     phone_book.sort();
     
