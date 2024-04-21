@@ -4,9 +4,6 @@ function solution(cards1, cards2, goal) {
     let a = goal.filter(e => cards1.includes(e));
     let b = goal.filter(e => cards2.includes(e));
     
-    console.log(a, cards1)
-    console.log(b, cards2)
-    
     for(let i = 0; i < a.length; i++) {
         if(cards1[i] !== a[i]) return 'No'
     }
@@ -16,6 +13,19 @@ function solution(cards1, cards2, goal) {
     }
     return 'Yes'
 }
+
+// 첫 번째 풀이 - 테스트 20, 21, 24 실패
+
+// function solution(cards1, cards2, goal) {
+//     let a = goal.filter(e => cards1.includes(e));
+//     let b = goal.filter(e => cards2.includes(e));
+
+//     if(a.join('') === cards1.join('') && b.join('') === cards2.join('')) return 'Yes';
+//     return 'No'
+// } 
+
+
+// 두 번째 풀이 - 테스트 25 실패
 
 // function solution(cards1, cards2, goal) {
 //     let a = goal.filter(e => cards1.includes(e));
@@ -28,13 +38,3 @@ function solution(cards1, cards2, goal) {
 //     if(a.join('') === cards1.join('') && b.join('') === cards2.join('')) return 'Yes';
 //     return 'No'
 // }
-// 두 번째 풀이 - 테스트 25 실패
-
-// function solution(cards1, cards2, goal) {
-//     let a = goal.filter(e => cards1.includes(e));
-//     let b = goal.filter(e => cards2.includes(e));
-
-//     if(a.join('') === cards1.join('') && b.join('') === cards2.join('')) return 'Yes';
-//     return 'No'
-// } 
-// 첫 번째 풀이 - 테스트 20, 21, 24 실패
