@@ -7,9 +7,7 @@ function solution(s) {
         let tuple = newArr[i].split(',');
         for(let j = 0; j < tuple.length; j++) {
             let num = parseInt(tuple[j]);
-            
-                result.push(num);
-            
+            result.push(num);
         }
     }
     result = [...new Set(result)]
