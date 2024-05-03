@@ -6,7 +6,6 @@
 var topKFrequent = function(nums, k) {
     const myMap = new Map();
     let result = [];
-    let cnt = 1;
 
     for(const num of nums) {
         myMap.set(num, (myMap.get(num) || 0) + 1)
