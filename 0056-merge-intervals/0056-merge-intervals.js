@@ -22,6 +22,12 @@ var merge = function(intervals) {
     
     return merged;
 };
+// 먼저, intervals 배열을 시작점을 기준으로 정렬
+// merged 배열에 첫 번째 구간을 추가
+// intervals 배열을 순회하면서 현재 구간과 merged 배열의 마지막 구간을 비교
+// 만약 현재 구간과 merged 배열의 마지막 구간이 겹치지 않는다면 현재 구간을 merged 배열에 추가
+// 겹친다면, 두 구간을 병합하여 merged 배열의 마지막 구간을 갱신
+// 병합된 구간이 저장된 merged 배열을 반환
 
 
 // var merge = function(intervals) {
