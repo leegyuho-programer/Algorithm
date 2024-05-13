@@ -5,25 +5,37 @@
 var permute = function(nums) {
     const permutations = [];
     
-    // 현재 순열을 생성하기 위해 배열을 탐색하는 데 사용되는 함수로 start는 현재까지 순열에 포함된 요소들의 개수
-    function backtrack(start) {
-        if (start === nums.length) {
-        // 모든 요소를 포함한 순열이 완성되었을 때를 처리
-            permutations.push([...nums]);
-        } else {
-            for (let i = start; i < nums.length; i++) {
-                [nums[start], nums[i]] = [nums[i], nums[start]];
-                // 현재 요소(nums[start])와 현재 인덱스의 요소(nums[i])를 교환
-                // 이를 통해 각 요소가 순열에 한 번씩 등장하도록 순열을 생성
-                backtrack(start + 1);
-                // 현재 요소를 교환 후, 다음 인덱스로 재귀 호출하여 순열을 계속 생성
-                [nums[start], nums[i]] = [nums[i], nums[start]];
-                // 재귀 호출이 완료된 후 현재 요소(nums[start])와 다른 요소(nums[i])의 위치를 다시 원래대로 복원
-            }
-        }
+    const dfs = (picked, unpicked) => {
+        if(unpicked.length === 0) return permutations.push(picked);
+
+        unpicked.forEach((num, i) => {
+            dfs(
+                [...picked, num],
+                [...unpicked.slice(0, i), ...unpicked.slice(i+1)]
+            );
+        })
     }
-    
-    backtrack(0);
-    // 재귀 함수를 시작하기 위해 backtrack 함수를 호출
+
+    dfs([], nums);
+
     return permutations;
 };
+
+/**
+-----------------> 고른 수: [],        남은 수: [1, 2, 3]
+    1 -----------> 고른 수: [1],       남은 수: [2, 3]
+        2 -------> 고른 수: [1, 2],    남은 수: [3]
+            3 ---> 고른 수: [1, 2, 3], 남은 수: [] 첫 번째 순열
+        3 -------> 고른 수: [1, 3],    남은 수: [2]
+            2 ---> 고른 수: [1, 3, 2], 남은 수: [] 두 번째 순열
+    2 -----------> 고른 수: [2],       남은 수: [1, 3]
+        1 -------> 고른 수: [2, 1],    남은 수: [3]
+            3 ---> 고른 수: [2, 1, 3], 남은 수: [] 세 번째 순열
+        3 -------> 고른 수: [2, 3],    남은 수: [1]
+            1 ---> 고른 수: [2, 3, 1], 남은 수: [] 네 번째 순열
+    3 -----------> 고른 수: [3],       남은 수: [1, 2]
+        1 -------> 고른 수: [3, 1],    남은 수: [2]
+            2 ---> 고른 수: [3, 1, 2], 남은 수: [] 다섯 번째 순열
+        2 -------> 고른 수: [3, 2],    남은 수: [1]
+            1 ---> 고른 수: [3, 2, 1], 남은 수: [] 여섯 번째 순열
+ */
