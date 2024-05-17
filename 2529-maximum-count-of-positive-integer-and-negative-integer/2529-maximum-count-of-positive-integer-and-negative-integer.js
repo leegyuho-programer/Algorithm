@@ -13,3 +13,5 @@ var maximumCount = function(nums) {
     
     return positive >= negative ? positive : negative;
 };
+
+// forEach보다 for문 돌리는 것이 더 빠름
