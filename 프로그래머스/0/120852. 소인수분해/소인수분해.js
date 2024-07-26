@@ -9,8 +9,6 @@ function solution(n) {
         } else {
             i++;
         }
-    }
-    let set = new Set(result)
-    
-    return [...set];
+    }   
+    return [...new Set(result)];
 }
