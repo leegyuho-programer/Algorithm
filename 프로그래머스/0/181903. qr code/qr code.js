@@ -10,9 +10,5 @@
 // }
 
 function solution(q, r, code) {
-    let result = '';
-    [...code].filter((e, i) => {
-        if(i % q === r) result += e;
-    })
-    return result;
+    return [...code].filter((e, i) => i % q === r).join('');
 }
