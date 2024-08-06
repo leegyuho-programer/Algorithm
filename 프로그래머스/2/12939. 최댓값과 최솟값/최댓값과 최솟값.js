@@ -1,15 +1,16 @@
 function solution(s) {
-    let result = '';
+    // let result = '';
     s = s.split(' ')
     
-    for(let i = 0; i < s.length; i++) {
-        s[i] = Number(s[i])
-    }
+//     for(let i = 0; i < s.length; i++) {
+//         s[i] = Number(s[i])
+//     }
     
-    s.sort((a,b) => a - b);
+//     s.sort((a,b) => a - b);
     
-    result += (s[0]).toString();
-    result += ' ' + (s[s.length - 1]).toString();
+//     result += (s[0]).toString();
+//     result += ' ' + (s[s.length - 1]).toString();
 
-    return result;
+//     return result;
+    return Math.min(...s) + ' ' + Math.max(...s)
 }
