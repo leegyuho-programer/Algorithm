@@ -1,11 +1,3 @@
-// function solution(priorities, location) {
-//     let result = [priorities[0]];
-    
-//     for(let i = 1; i < priorities.length; i++) {
-//         if(result[result.length - 1] >= priorities[i])
-//     }
-// }
-
 function solution(priorities, location) {
     let queue = priorities.map((priority, index) => [priority, index]);
     let result = 0;
