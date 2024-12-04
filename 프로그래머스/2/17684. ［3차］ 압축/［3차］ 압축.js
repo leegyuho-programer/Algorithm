@@ -22,7 +22,7 @@ function solution(msg) {
         
         result.push(dictionary[word]);
         
-        if(msg.length > j) dictionary[word + msg[j]] = ++lastIndex;
+        dictionary[word + msg[j]] = ++lastIndex;
         
         i += word.length;
     }
