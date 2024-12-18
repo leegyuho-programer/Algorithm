@@ -8,19 +8,13 @@ function solution(dartResult) {
         } else {
             switch (dartResult[i]) {
                 case 'S':
-                    temp = Math.pow(parseInt(temp), 1);
-                    point.push(temp);
-                    temp = '';
+                    point.push(Math.pow(parseInt(temp), 1));
                     break;
                 case 'D':
-                    temp = Math.pow(parseInt(temp), 2);
-                    point.push(temp);
-                    temp = '';
+                    point.push(Math.pow(parseInt(temp), 2));
                     break;
                 case 'T':
-                    temp = Math.pow(parseInt(temp), 3);
-                    point.push(temp);
-                    temp = '';
+                    point.push(Math.pow(parseInt(temp), 3));
                     break;
                 case '*':
                     if(point.length > 1) {
@@ -34,8 +28,9 @@ function solution(dartResult) {
                     point[point.length - 1] *= -1;
                     break;
             }
+            temp = '';
         }
     }
     
-    return point.reduce((prev, cur) => prev + cur)
+    return point.reduce((prev, cur) => prev + cur, 0);
 }
