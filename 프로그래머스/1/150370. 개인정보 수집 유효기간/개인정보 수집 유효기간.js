@@ -7,34 +7,26 @@ function solution(today, terms, privacies) {
     today = today.split('.');
     
     for(let i = 0; i < terms.length; i++) {
-        let c = terms[i].split(' ');
+        const expiration = terms[i].split(' ');
         
-        dict.set(c[0], parseInt(c[1]));
+        dict.set(expiration[0], parseInt(expiration[1]));
     }
     
     for(let i = 0; i < privacies.length; i++) {
         term = privacies[i].substr(-1);
         privacy = privacies[i].substr(0, 10).split('.');
         
-        const a = (parseInt(today[0]) - parseInt(privacy[0])) * 12 + parseInt(today[1])
-        const b = parseInt(privacy[1]) + dict.get(term)
+        const year = (parseInt(today[0]) - parseInt(privacy[0])) * 12 + parseInt(today[1]);
+        const month = parseInt(privacy[1]) + dict.get(term);
+        const date = today[2] >= privacy[2];
         
-        console.log('1', (parseInt(today[0])))
-        console.log('2', parseInt(privacy[0]))
-        console.log('3', parseInt(today[1]))
-        console.log('결과1', (parseInt(today[0]) - parseInt(privacy[0])) * 12 + parseInt(today[1]))
-        console.log('4', parseInt(privacy[1]))
-        console.log('5', dict.get(term))
-        console.log('결과2', parseInt(privacy[1]) + dict.get(term))
-        
-        if(a > b) {
+        if(year > month) {
             result.push(i+1);
-        } else if(a === b) {
-            if(today[2] >= privacy[2]) {
+        } else if(year === month) {
+            if(date) {
                 result.push(i+1);
             }
         }
-        console.log('result', result)
     }
     
     return result;
