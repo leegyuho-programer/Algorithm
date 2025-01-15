@@ -14,10 +14,11 @@ function solution(bandage, health, attacks) {
         
         if(currentHealth >= health) currentHealth = health
         currentHealth -= damage;
-        currentTurn = attackTime;
         
         if(currentHealth <= 0) return -1;
+        
+        currentTurn = attackTime;
     }
     
-    return currentHealth > 0 ? currentHealth : -1;
+    return currentHealth;
 }
