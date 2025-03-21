@@ -17,15 +17,22 @@ const directions = [
   [0, 1], // 우
 ];
 
+let startX, startY;
+
+for (let i = 0; i < N; i++) {
+  for (let j = 0; j < M; j++) {
+    if (board[i][j] === 'I') {
+      startX = i;
+      startY = j;
+    }
+  }
+}
+
 const bfs = (x, y) => {
   let queue = [[x, y]];
   visited[x][y] = true;
 
-  let isInI = false;
   let count = 0;
-
-  if (board[x][y] === 'P') count++;
-  if (board[x][y] === 'I') isInI = true;
 
   while (queue.length) {
     const [qx, qy] = queue.shift();
@@ -46,22 +53,12 @@ const bfs = (x, y) => {
         visited[nx][ny] = true;
 
         if (board[nx][ny] === 'P') count++;
-        if (board[nx][ny] === 'I') isInI = true;
       }
     }
   }
 
-  return isInI ? count : 0;
+  return count;
 };
 
-let meetPeople = 0;
-
-for (let i = 0; i < N; i++) {
-  for (let j = 0; j < M; j++) {
-    if (!visited[i][j] && board[i][j] !== 'X') {
-      meetPeople += bfs(i, j);
-    }
-  }
-}
-
-console.log(meetPeople > 0 ? meetPeople : 'TT');
+const result = bfs(startX, startY);
+console.log(result > 0 ? result : 'TT');
