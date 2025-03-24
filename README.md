@@ -16,10 +16,12 @@ Solving problems at LeetCode.
 | [0119-pascals-triangle-ii](https://github.com/leegyuho-programer/Algorithm/tree/master/0119-pascals-triangle-ii) |
 | [0747-min-cost-climbing-stairs](https://github.com/leegyuho-programer/Algorithm/tree/master/0747-min-cost-climbing-stairs) |
 | [1013-fibonacci-number](https://github.com/leegyuho-programer/Algorithm/tree/master/1013-fibonacci-number) |
+| [1086-divisor-game](https://github.com/leegyuho-programer/Algorithm/tree/master/1086-divisor-game) |
 ## Math
 |  |
 | ------- |
 | [1013-fibonacci-number](https://github.com/leegyuho-programer/Algorithm/tree/master/1013-fibonacci-number) |
+| [1086-divisor-game](https://github.com/leegyuho-programer/Algorithm/tree/master/1086-divisor-game) |
 ## Recursion
 |  |
 | ------- |
@@ -28,4 +30,12 @@ Solving problems at LeetCode.
 |  |
 | ------- |
 | [1013-fibonacci-number](https://github.com/leegyuho-programer/Algorithm/tree/master/1013-fibonacci-number) |
+## Brainteaser
+|  |
+| ------- |
+| [1086-divisor-game](https://github.com/leegyuho-programer/Algorithm/tree/master/1086-divisor-game) |
+## Game Theory
+|  |
+| ------- |
+| [1086-divisor-game](https://github.com/leegyuho-programer/Algorithm/tree/master/1086-divisor-game) |
 <!---LeetCode Topics End-->
