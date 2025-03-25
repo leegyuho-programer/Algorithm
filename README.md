@@ -18,12 +18,14 @@ Solving problems at LeetCode.
 | [0747-min-cost-climbing-stairs](https://github.com/leegyuho-programer/Algorithm/tree/master/0747-min-cost-climbing-stairs) |
 | [1013-fibonacci-number](https://github.com/leegyuho-programer/Algorithm/tree/master/1013-fibonacci-number) |
 | [1086-divisor-game](https://github.com/leegyuho-programer/Algorithm/tree/master/1086-divisor-game) |
+| [1236-n-th-tribonacci-number](https://github.com/leegyuho-programer/Algorithm/tree/master/1236-n-th-tribonacci-number) |
 | [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/leegyuho-programer/Algorithm/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
 ## Math
 |  |
 | ------- |
 | [1013-fibonacci-number](https://github.com/leegyuho-programer/Algorithm/tree/master/1013-fibonacci-number) |
 | [1086-divisor-game](https://github.com/leegyuho-programer/Algorithm/tree/master/1086-divisor-game) |
+| [1236-n-th-tribonacci-number](https://github.com/leegyuho-programer/Algorithm/tree/master/1236-n-th-tribonacci-number) |
 ## Recursion
 |  |
 | ------- |
@@ -32,6 +34,7 @@ Solving problems at LeetCode.
 |  |
 | ------- |
 | [1013-fibonacci-number](https://github.com/leegyuho-programer/Algorithm/tree/master/1013-fibonacci-number) |
+| [1236-n-th-tribonacci-number](https://github.com/leegyuho-programer/Algorithm/tree/master/1236-n-th-tribonacci-number) |
 ## Brainteaser
 |  |
 | ------- |
