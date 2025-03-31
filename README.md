@@ -48,6 +48,7 @@ Solving problems at LeetCode.
 |  |
 | ------- |
 | [1764-maximum-repeating-substring](https://github.com/leegyuho-programer/Algorithm/tree/master/1764-maximum-repeating-substring) |
+| [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/leegyuho-programer/Algorithm/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
 | [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/leegyuho-programer/Algorithm/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
 ## Greedy
 |  |
@@ -57,4 +58,12 @@ Solving problems at LeetCode.
 |  |
 | ------- |
 | [1764-maximum-repeating-substring](https://github.com/leegyuho-programer/Algorithm/tree/master/1764-maximum-repeating-substring) |
+## Hash Table
+|  |
+| ------- |
+| [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/leegyuho-programer/Algorithm/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
+## Counting
+|  |
+| ------- |
+| [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/leegyuho-programer/Algorithm/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
 <!---LeetCode Topics End-->
