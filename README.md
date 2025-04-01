@@ -10,6 +10,7 @@ Solving problems at LeetCode.
 | [0119-pascals-triangle-ii](https://github.com/leegyuho-programer/Algorithm/tree/master/0119-pascals-triangle-ii) |
 | [0747-min-cost-climbing-stairs](https://github.com/leegyuho-programer/Algorithm/tree/master/0747-min-cost-climbing-stairs) |
 | [2122-count-special-quadruplets](https://github.com/leegyuho-programer/Algorithm/tree/master/2122-count-special-quadruplets) |
+| [2159-two-out-of-three](https://github.com/leegyuho-programer/Algorithm/tree/master/2159-two-out-of-three) |
 | [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/leegyuho-programer/Algorithm/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
 ## Dynamic Programming
 |  |
@@ -64,6 +65,7 @@ Solving problems at LeetCode.
 | ------- |
 | [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/leegyuho-programer/Algorithm/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
 | [2122-count-special-quadruplets](https://github.com/leegyuho-programer/Algorithm/tree/master/2122-count-special-quadruplets) |
+| [2159-two-out-of-three](https://github.com/leegyuho-programer/Algorithm/tree/master/2159-two-out-of-three) |
 ## Counting
 |  |
 | ------- |
@@ -72,4 +74,8 @@ Solving problems at LeetCode.
 |  |
 | ------- |
 | [2122-count-special-quadruplets](https://github.com/leegyuho-programer/Algorithm/tree/master/2122-count-special-quadruplets) |
+## Bit Manipulation
+|  |
+| ------- |
+| [2159-two-out-of-three](https://github.com/leegyuho-programer/Algorithm/tree/master/2159-two-out-of-three) |
 <!---LeetCode Topics End-->
