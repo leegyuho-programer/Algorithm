@@ -11,6 +11,7 @@ Solving problems at LeetCode.
 | [0747-min-cost-climbing-stairs](https://github.com/leegyuho-programer/Algorithm/tree/master/0747-min-cost-climbing-stairs) |
 | [2122-count-special-quadruplets](https://github.com/leegyuho-programer/Algorithm/tree/master/2122-count-special-quadruplets) |
 | [2159-two-out-of-three](https://github.com/leegyuho-programer/Algorithm/tree/master/2159-two-out-of-three) |
+| [2163-kth-distinct-string-in-an-array](https://github.com/leegyuho-programer/Algorithm/tree/master/2163-kth-distinct-string-in-an-array) |
 | [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/leegyuho-programer/Algorithm/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
 ## Dynamic Programming
 |  |
@@ -51,6 +52,7 @@ Solving problems at LeetCode.
 | ------- |
 | [1764-maximum-repeating-substring](https://github.com/leegyuho-programer/Algorithm/tree/master/1764-maximum-repeating-substring) |
 | [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/leegyuho-programer/Algorithm/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
+| [2163-kth-distinct-string-in-an-array](https://github.com/leegyuho-programer/Algorithm/tree/master/2163-kth-distinct-string-in-an-array) |
 | [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/leegyuho-programer/Algorithm/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
 ## Greedy
 |  |
@@ -66,10 +68,12 @@ Solving problems at LeetCode.
 | [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/leegyuho-programer/Algorithm/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
 | [2122-count-special-quadruplets](https://github.com/leegyuho-programer/Algorithm/tree/master/2122-count-special-quadruplets) |
 | [2159-two-out-of-three](https://github.com/leegyuho-programer/Algorithm/tree/master/2159-two-out-of-three) |
+| [2163-kth-distinct-string-in-an-array](https://github.com/leegyuho-programer/Algorithm/tree/master/2163-kth-distinct-string-in-an-array) |
 ## Counting
 |  |
 | ------- |
 | [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/leegyuho-programer/Algorithm/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
+| [2163-kth-distinct-string-in-an-array](https://github.com/leegyuho-programer/Algorithm/tree/master/2163-kth-distinct-string-in-an-array) |
 ## Enumeration
 |  |
 | ------- |
