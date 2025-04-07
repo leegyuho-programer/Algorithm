@@ -3,15 +3,12 @@
  * @return {number}
  */
 var minimumCost = function(cost) {
-    cost.sort((a,b) => a - b);
+    cost.sort((a,b) => b - a);
     let sum = 0;
     
-    if(cost.length % 3 !== 0) {
-        sum += cost.splice(0, cost.length % 3).reduce((prev, cur) => (prev + cur), 0);
-    } 
-    
-    if(cost.length % 3 === 0) {
-        sum += cost.filter((num, index) => index % 3 !== 0).reduce((prev, cur) => (prev + cur), 0);
+    for(let i = 0; i < cost.length; i += 3) {
+       sum += cost[i] || 0;
+       sum += cost[i+1] || 0;
     }
 
     return sum
