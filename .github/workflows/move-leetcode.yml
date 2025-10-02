@@ -17,7 +17,7 @@ jobs:
           for dir in [0-9][0-9][0-9][0-9]-*; do
             if [ -d "$dir" ]; then
               echo "Moving $dir -> LeetCode/$dir"
-              # 먼저 이동 시도, 실패하면 기존 폴더 지우고 다시 이동
+              # 기존에 같은 폴더가 있으면 지우고 다시 이동
               mv "$dir" LeetCode/ 2>/dev/null || (rm -rf "LeetCode/$dir" && mv "$dir" LeetCode/)
             fi
           done
