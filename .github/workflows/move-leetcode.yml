@@ -14,7 +14,6 @@ jobs:
       - name: Move LeetCode problem folders
         run: |
           mkdir -p LeetCode
-          # "0001-two-sum", "0002-add-two-numbers" 같은 폴더들을 LeetCode/ 안으로 이동
           for dir in [0-9][0-9][0-9][0-9]-*; do
             if [ -d "$dir" ]; then
               echo "Moving $dir -> LeetCode/$dir"
@@ -24,8 +23,8 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "leegyuho-programer"
+          git config --global user.email "101032270+leegyuho-programer@users.noreply.github.com"
           git add .
           git commit -m "chore: auto-move LeetCode problem folders to /LeetCode" || echo "No changes"
           git push
