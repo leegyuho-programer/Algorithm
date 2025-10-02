@@ -58,6 +58,7 @@ Solving problems at LeetCode.
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/leegyuho-programer/Algorithm/tree/master/0005-longest-palindromic-substring) |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/leegyuho-programer/Algorithm/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [1764-maximum-repeating-substring](https://github.com/leegyuho-programer/Algorithm/tree/master/1764-maximum-repeating-substring) |
 | [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/leegyuho-programer/Algorithm/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
 | [2088-minimum-time-to-type-word-using-special-typewriter](https://github.com/leegyuho-programer/Algorithm/tree/master/2088-minimum-time-to-type-word-using-special-typewriter) |
@@ -75,6 +76,7 @@ Solving problems at LeetCode.
 ## String Matching
 |  |
 | ------- |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/leegyuho-programer/Algorithm/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [1764-maximum-repeating-substring](https://github.com/leegyuho-programer/Algorithm/tree/master/1764-maximum-repeating-substring) |
 ## Hash Table
 |  |
@@ -101,6 +103,7 @@ Solving problems at LeetCode.
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/leegyuho-programer/Algorithm/tree/master/0005-longest-palindromic-substring) |
 | [0015-3sum](https://github.com/leegyuho-programer/Algorithm/tree/master/0015-3sum) |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/leegyuho-programer/Algorithm/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 ## Sorting
 |  |
 | ------- |
