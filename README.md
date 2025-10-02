@@ -19,6 +19,7 @@ Solving problems at LeetCode.
 ## Dynamic Programming
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/leegyuho-programer/Algorithm/tree/master/0005-longest-palindromic-substring) |
 | [0070-climbing-stairs](https://github.com/leegyuho-programer/Algorithm/tree/master/0070-climbing-stairs) |
 | [0118-pascals-triangle](https://github.com/leegyuho-programer/Algorithm/tree/master/0118-pascals-triangle) |
 | [0119-pascals-triangle-ii](https://github.com/leegyuho-programer/Algorithm/tree/master/0119-pascals-triangle-ii) |
@@ -56,6 +57,7 @@ Solving problems at LeetCode.
 ## String
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/leegyuho-programer/Algorithm/tree/master/0005-longest-palindromic-substring) |
 | [1764-maximum-repeating-substring](https://github.com/leegyuho-programer/Algorithm/tree/master/1764-maximum-repeating-substring) |
 | [2053-check-if-all-characters-have-equal-number-of-occurrences](https://github.com/leegyuho-programer/Algorithm/tree/master/2053-check-if-all-characters-have-equal-number-of-occurrences) |
 | [2088-minimum-time-to-type-word-using-special-typewriter](https://github.com/leegyuho-programer/Algorithm/tree/master/2088-minimum-time-to-type-word-using-special-typewriter) |
@@ -97,6 +99,7 @@ Solving problems at LeetCode.
 ## Two Pointers
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/leegyuho-programer/Algorithm/tree/master/0005-longest-palindromic-substring) |
 | [0015-3sum](https://github.com/leegyuho-programer/Algorithm/tree/master/0015-3sum) |
 ## Sorting
 |  |
