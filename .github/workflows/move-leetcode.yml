@@ -24,8 +24,8 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config --global user.name "LEEGYUHO"
-          git config --global user.email "본인_깃허브_이메일@이메일.com"
+          git config --global user.name "leegyuho-programer"
+          git config --global user.email "101032270+leegyuho-programer@users.noreply.github.com"
           git add .
           git commit -m "chore: auto-move LeetCode problem folders to /LeetCode" || echo "No changes"
           git push
