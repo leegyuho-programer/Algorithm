@@ -19,6 +19,7 @@ Solving problems at LeetCode.
 ## Dynamic Programming
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/leegyuho-programer/Algorithm/tree/master/0070-climbing-stairs) |
 | [0118-pascals-triangle](https://github.com/leegyuho-programer/Algorithm/tree/master/0118-pascals-triangle) |
 | [0119-pascals-triangle-ii](https://github.com/leegyuho-programer/Algorithm/tree/master/0119-pascals-triangle-ii) |
 | [0747-min-cost-climbing-stairs](https://github.com/leegyuho-programer/Algorithm/tree/master/0747-min-cost-climbing-stairs) |
@@ -30,6 +31,7 @@ Solving problems at LeetCode.
 ## Math
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/leegyuho-programer/Algorithm/tree/master/0070-climbing-stairs) |
 | [1013-fibonacci-number](https://github.com/leegyuho-programer/Algorithm/tree/master/1013-fibonacci-number) |
 | [1086-divisor-game](https://github.com/leegyuho-programer/Algorithm/tree/master/1086-divisor-game) |
 | [1236-n-th-tribonacci-number](https://github.com/leegyuho-programer/Algorithm/tree/master/1236-n-th-tribonacci-number) |
@@ -40,6 +42,7 @@ Solving problems at LeetCode.
 ## Memoization
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/leegyuho-programer/Algorithm/tree/master/0070-climbing-stairs) |
 | [1013-fibonacci-number](https://github.com/leegyuho-programer/Algorithm/tree/master/1013-fibonacci-number) |
 | [1236-n-th-tribonacci-number](https://github.com/leegyuho-programer/Algorithm/tree/master/1236-n-th-tribonacci-number) |
 ## Brainteaser
