@@ -1,4 +1,4 @@
-name: Organize LeetCode files
+name: Organize LeetCode problems
 
 on:
   push:
@@ -11,15 +11,21 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Move LeetCode files
+      - name: Move LeetCode problem folders
         run: |
           mkdir -p LeetCode
-          find . -maxdepth 1 -type f -name "leetcode*" -exec mv {} LeetCode/ \;
+          # "0001-two-sum", "0002-add-two-numbers" 같은 폴더들을 LeetCode/ 안으로 이동
+          for dir in [0-9][0-9][0-9][0-9]-*; do
+            if [ -d "$dir" ]; then
+              echo "Moving $dir -> LeetCode/$dir"
+              mv "$dir" LeetCode/
+            fi
+          done
 
       - name: Commit changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "chore: auto-move LeetCode files to /LeetCode" || echo "No changes"
+          git commit -m "chore: auto-move LeetCode problem folders to /LeetCode" || echo "No changes"
           git push
