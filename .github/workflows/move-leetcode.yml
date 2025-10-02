@@ -17,14 +17,15 @@ jobs:
           for dir in [0-9][0-9][0-9][0-9]-*; do
             if [ -d "$dir" ]; then
               echo "Moving $dir -> LeetCode/$dir"
-              mv -f "$dir" LeetCode/
+              # 먼저 이동 시도, 실패하면 기존 폴더 지우고 다시 이동
+              mv "$dir" LeetCode/ 2>/dev/null || (rm -rf "LeetCode/$dir" && mv "$dir" LeetCode/)
             fi
           done
 
       - name: Commit changes
         run: |
-          git config --global user.name "leegyuho-programer"
-          git config --global user.email "101032270+leegyuho-programer@users.noreply.github.com"
+          git config --global user.name "LEEGYUHO"
+          git config --global user.email "본인_깃허브_이메일@이메일.com"
           git add .
           git commit -m "chore: auto-move LeetCode problem folders to /LeetCode" || echo "No changes"
           git push
