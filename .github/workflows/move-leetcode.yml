@@ -5,9 +5,8 @@ on:
     branches:
       - main
 
-# 깃허브 액션이 repo에 push할 수 있도록 권한 부여
 permissions:
-  contents: write
+  contents: write   # 깃허브 액션이 repo에 push할 수 있도록 권한 부여
 
 jobs:
   organize:
@@ -15,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}   # 기본 제공 토큰 사용
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Move LeetCode problem folders
         run: |
@@ -24,7 +23,8 @@ jobs:
             if [ -d "$dir" ]; then
               echo "Moving $dir -> LeetCode/$dir"
               # 기존 폴더가 있으면 삭제 후 이동
-              mv "$dir" LeetCode/ 2>/dev/null || (rm -rf "LeetCode/$dir" && mv "$dir" LeetCode/)
+              rm -rf "LeetCode/$dir"
+              mv "$dir" LeetCode/
             fi
           done
 
