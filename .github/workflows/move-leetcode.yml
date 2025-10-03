@@ -6,7 +6,7 @@ on:
       - main
 
 permissions:
-  contents: write   # 깃허브 액션이 repo에 push할 수 있도록 권한 부여
+  contents: write
 
 jobs:
   organize:
@@ -19,19 +19,22 @@ jobs:
       - name: Move LeetCode problem folders
         run: |
           mkdir -p LeetCode
+          changed=false
           for dir in [0-9][0-9][0-9][0-9]-*; do
             if [ -d "$dir" ]; then
               echo "Moving $dir -> LeetCode/$dir"
-              # 기존 폴더가 있으면 삭제 후 이동
               rm -rf "LeetCode/$dir"
               mv "$dir" LeetCode/
+              changed=true
             fi
           done
+          echo "changed=$changed" >> $GITHUB_ENV
 
       - name: Commit changes
+        if: env.changed == 'true'   # 변경이 있을 때만 commit & push
         run: |
           git config --global user.name "leegyuho-programer"
           git config --global user.email "101032270+leegyuho-programer@users.noreply.github.com"
           git add .
-          git commit -m "chore: auto-move LeetCode problem folders to /LeetCode" || echo "No changes"
+          git commit -m "chore: auto-move LeetCode problem folders to /LeetCode"
           git push
