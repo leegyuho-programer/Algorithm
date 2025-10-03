@@ -16,20 +16,24 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Move LeetCode problem folders
+      - name: Move only LeetCode problem folders
         run: |
           mkdir -p LeetCode
+          # 루트에 있는 LeetCode 문제 폴더만 이동 (예: 0001-two-sum)
           for dir in [0-9][0-9][0-9][0-9]-*; do
             if [ -d "$dir" ]; then
               echo "Moving $dir -> LeetCode/$dir"
-              rm -rf "LeetCode/$dir"   # 같은 이름 폴더 있으면 무조건 삭제
+              rm -rf "LeetCode/$dir"   # 기존에 있으면 삭제 후 교체
               mv "$dir" LeetCode/
             fi
           done
+          # 루트에 남아 있는 LeetCode 문제 폴더는 전부 삭제 (Baekjoon, Programmers는 건드리지 않음)
+          rm -rf [0-9][0-9][0-9][0-9]-*
 
       - name: Commit changes
         run: |
           git config --global user.name "leegyuho-programer"
           git config --global user.email "101032270+leegyuho-programer@users.noreply.github.com"
           git add LeetCode/
-          git diff --cached --quiet || (git commit -m "chore: auto-move LeetCode problems (overwrite existing)" && git push)
+          git rm -rf --ignore-unmatch [0-9][0-9][0-9][0-9]-*   # Git 인덱스에서 루트 LeetCode 문제 폴더 제거
+          git diff --cached --quiet || (git commit -m "chore: organize LeetCode problems into /LeetCode (Baekjoon & Programmers untouched)" && git push)
