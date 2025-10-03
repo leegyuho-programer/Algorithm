@@ -16,4 +16,12 @@
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/leegyuho-programer/Algorithm/tree/master/0005-longest-palindromic-substring) |
+## Array
+|  |
+| ------- |
+| [0066-plus-one](https://github.com/leegyuho-programer/Algorithm/tree/master/0066-plus-one) |
+## Math
+|  |
+| ------- |
+| [0066-plus-one](https://github.com/leegyuho-programer/Algorithm/tree/master/0066-plus-one) |
 <!---LeetCode Topics End-->
